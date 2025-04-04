@@ -41,10 +41,6 @@ function Contacto() {
                 <div className="bg-[#FDF6F6] p-3 rounded-lg">
                   <Mail className="w-6 h-6 text-[#D4A5A5]" />
                 </div>
-                <div>
-                  <h4 className="font-serif text-[#D4A5A5] mb-1">Email</h4>
-                  <p className="text-[#E3B7B7]">info@bionaturapilatesreformer.com</p>
-                </div>
               </div>
             </div>
 
@@ -72,7 +68,7 @@ function Contacto() {
                 <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
+                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="text-[#DD969C] hover:text-[#A68977]">
                   <Facebook className="w-6 h-6" />
                 </a>
               </div>

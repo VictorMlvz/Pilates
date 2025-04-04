@@ -398,25 +398,34 @@ function Home() {
             <div className="bg-[#FDF6F6] p-6 rounded-lg">
               <h3 className="text-xl font-serif text-[#EA899A] mb-4">Principiantes</h3>
               <p className="text-[#DD969C] mb-4">Ideal para quienes comienzan su práctica de pilates</p>
-              <button className="bg-[#DD969C] text-white px-6 py-2 rounded-full hover:bg-[#A68977] transition">
-                Más información
-              </button>
             </div>
             <div className="bg-[#FDF6F6] p-6 rounded-lg">
               <h3 className="text-xl font-serif text-[#EA899A] mb-4">Intermedio</h3>
               <p className="text-[#DD969C] mb-4">Para quienes buscan profundizar su práctica</p>
-              <button className="bg-[#DD969C] text-white px-6 py-2 rounded-full hover:bg-[#A68977] transition">
-                Más información
-              </button>
             </div>
             <div className="bg-[#FDF6F6] p-6 rounded-lg">
               <h3 className="text-xl font-serif text-[#EA899A] mb-4">Avanzado</h3>
               <p className="text-[#DD969C] mb-4">Ejercicios desafiantes para expertas</p>
-              <button className="bg-[#DD969C] text-white px-6 py-2 rounded-full hover:bg-[#A68977] transition">
-                Más información
-              </button>
             </div>
           </div>
+          <br></br>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#FDF6F6] p-6 rounded-lg">
+              <h3 className="text-xl font-serif text-[#EA899A] mb-4">1 clase $150</h3>
+              <h3 className="text-xl font-serif text-[#EA899A] mb-4">3 clases - $400 </h3>
+            </div>
+            <div className="bg-[#FDF6F6] p-6 rounded-lg">
+            <h3 className="text-xl font-serif text-[#EA899A] mb-4">6 clases $800</h3>
+            <h3 className="text-xl font-serif text-[#EA899A] mb-4">10 clases $1300 (3 semanas)</h3>
+            </div>
+            <div className="bg-[#FDF6F6] p-6 rounded-lg">
+              <h3 className="text-xl font-serif text-[#EA899A] mb-4">30 clases $3,600 (1 mes y medio)</h3>
+            </div>
+          </div>
+          <br></br>
+          <h2 className="text-4sm font-serif text-[#EA899A] text-center mb-16">Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso) <br
+          ></br>
+          La clase se apertura a partir de tres personas</h2>
         </div>
       </section>
 

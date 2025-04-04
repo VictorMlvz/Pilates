@@ -97,10 +97,6 @@ function About() {
                 <Phone className="w-6 h-6 text-[#DD969C]" />
                 <p className="text-[#DD969C]">+74 7101 0389</p>
               </div>
-              <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-[#DD969C]" />
-                <p className="text-[#DD969C]">info@bionaturapilatesreformer.com</p>
-              </div>
               <div className="flex gap-4 pt-4 pb-1">
                 <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="text-[#DD969C] hover:text-[#A68977]">
                   <Instagram className="w-6 h-6" />
