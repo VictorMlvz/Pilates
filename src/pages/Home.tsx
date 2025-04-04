@@ -410,29 +410,24 @@ function Home() {
           </div>
           <br></br>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#FDF6F6] p-6 rounded-lg">
-              <h3 className="text-xl font-serif text-[#EA899A] mb-4">1 clase $150</h3>
-              <h3 className="text-xl font-serif text-[#EA899A] mb-4">3 clases - $400 </h3>
-            </div>
-            <div className="bg-[#FDF6F6] p-6 rounded-lg">
-            <h3 className="text-xl font-serif text-[#EA899A] mb-4">6 clases $800</h3>
-            <h3 className="text-xl font-serif text-[#EA899A] mb-4">10 clases $1300 (3 semanas)</h3>
-            </div>
-            <div className="bg-[#FDF6F6] p-6 rounded-lg">
-              <h3 className="text-xl font-serif text-[#EA899A] mb-4">30 clases $3,600 (1 mes y medio)</h3>
-            </div>
+            <div className="bg-[#DF428E] p-6 rounded-lg">
+              <h2 className="text-2xl font-serif text-[#FFFFFF] mb-4">Precios: </h2>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">1 clase - $150</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">3 clases - $400 </h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">6 clases - $800</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">10 clases - $1,300</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">30 clases - $3,600</h3>
           </div>
-          <br></br>
-          <h2 className="text-4sm font-serif text-[#EA899A] text-center mb-16">Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso) <br
-          ></br>
-          La clase se apertura a partir de tres personas</h2>
+          <h1 className="text-4sm font-serif text-[#EA899A] text-center mb-16">La clase se apertura a partir de tres personas </h1>
+          <h3 className="text-4sm font-serif text-[#EA899A] text-center mb-16"> Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso)</h3>
+          </div>
         </div>
       </section>
 
       {/* Contacto */}
       <section id="contacto" className="py-20 bg-[#FDF6F6]">
         <div className="container mx-auto w-[80vw] md:w-[55vw] px-6 bg-white/80 backdrop-blur-sm p-12 rounded-lg border-[#DD969C] border-2">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#DD969C] text-center mb-12">¡Envianos un mensaje!</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#DD969C] text-center mb-12">¡Agenda tu clase!</h2>
           <div className="max-w-md mx-auto">
               <button className="w-full bg-[#DD969C] text-white px-8 py-3 rounded-full hover:bg-[#A68977] transition">
                 <a href="https://api.whatsapp.com/send?phone=527471010389&text=Hola,%20quiero%20reservar%20una%20clase…
