@@ -1,8 +1,28 @@
-import { Dumbbell, Users, Calendar, Instagram, Clock, MapPin } from 'lucide-react';
+import { Dumbbell, Users, Calendar, Instagram, Clock, MapPin,Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { addMonths, format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth } from 'date-fns';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { es } from 'date-fns/locale';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const images = [
+  "/src/2b.jpeg",
+  "/src/1a.jpeg",
+  "/src/3c.jpeg",
+];
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false, // Oculté las flechas para un diseño más limpio
+};
 
 function Home() {
   const [showBooking, setShowBooking] = useState(false);
@@ -18,7 +38,7 @@ function Home() {
   ];
 
   const times = [
-    '08:00', '09:00', '10:00', '16:00', '17:00', '18:00'
+    '07:00','08:00', '09:00', '10:00', '16:00', '17:00', '18:00' , '19:00'
   ];
 
   // Simulated class schedule data
@@ -157,10 +177,9 @@ function Home() {
           </div>
 
           <div className="mt-8 text-center">
-            <button
+              <button
               onClick={handleBookingClick}
-              className="bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition"
-            >
+              className="bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition">
               Reserva tu clase
             </button>
           </div>
@@ -265,10 +284,8 @@ function Home() {
                           className="w-full px-4 py-3 rounded-lg bg-white border border-[#D4A5A5]/20 focus:outline-none focus:border-[#D4A5A5]"
                         />
                         <button
-                          type="submit"
-                          className="w-full bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition mt-6"
-                        >
-                          Confirmar reserva
+                          className="w-full bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition mt-6" >
+                          <a href="https://api.whatsapp.com/send?phone=527471010389&text=Hola,%20quiero%20reservar%20una%20clase… ">Confirmar reserva</a>
                         </button>
                       </form>
                     </div>
@@ -278,7 +295,7 @@ function Home() {
                 <div className="mt-8 pt-6 border-t border-gray-100">
                   <div className="flex items-center text-[#E3B7B7]">
                     <MapPin className="w-5 h-5 mr-2" />
-                    <p>Av. Principal 123, Ciudad</p>
+                    <p>Av Miguel Alemán 75, Centro, 39000 Chilpancingo de los Bravo, Gro.</p>
                   </div>
                 </div>
               </div>
@@ -347,25 +364,29 @@ function Home() {
 
       {/* About Us */}
       <section id="nosotras" className="py-20 bg-[#FDF6F6]">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-serif text-[#EA899A] text-center mb-16"> Un Poco Sobre Nosotras...</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Pilates class"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <p className="text-xl text-[#DD969C] mb-6">
-                En Pilates Reformer creemos que el ejercicio es más que movimiento, es una forma de cuidarte y conectar con tu cuerpo. Nuestro espacio está diseñado para que te sientas cómoda y segura mientras trabajas en tu bienestar.
-              </p>
-              <p className="text-xl text-[#DD969C]">
-                Con instructoras certificadas y años de experiencia, te guiaremos en tu práctica de pilates para que alcances tus objetivos de forma segura y efectiva.
-              </p>
-            </div>
+        <div className="container mx-auto px-6 justify-center items-center">
+          <h2 className="text-4xl font-serif text-[#EA899A] text-center mb-16"> Nuestras instalaciones. </h2>
+          <div className="mb-12 justify-center items-center"> {/* Añadido margen inferior para separar del texto */}
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index} className="flex justify-center items-center">
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              className="rounded-lg shadow-lg max-h-[400px] object-contain" // Ajusta max-h según necesites
+            />
           </div>
+        ))}
+      </Slider>
+      <div className="mt-12">
+        <p className="text-xl text-[#DD969C] mb-6">
+          En Pilates Reformer creemos que el ejercicio es más que movimiento, es una forma de cuidarte y conectar con tu cuerpo. Nuestro espacio está diseñado para que te sientas cómoda y segura mientras trabajas en tu bienestar.
+        </p>
+        <p className="text-xl text-[#DD969C]">
+          Con instructoras certificadas y años de experiencia, te guiaremos en tu práctica de pilates para que alcances tus objetivos de forma segura y efectiva.
+        </p>
+      </div>
+    </div>
         </div>
       </section>
 
@@ -402,34 +423,13 @@ function Home() {
       {/* Contacto */}
       <section id="contacto" className="py-20 bg-[#FDF6F6]">
         <div className="container mx-auto w-[80vw] md:w-[55vw] px-6 bg-white/80 backdrop-blur-sm p-12 rounded-lg border-[#DD969C] border-2">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#DD969C] text-center mb-12">Contáctanos!</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#DD969C] text-center mb-12">¡Envianos un mensaje!</h2>
           <div className="max-w-md mx-auto">
-            <form className="space-y-7">
-              <div>
-                <input 
-                  type="text" 
-                  placeholder="Nombre"
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#8B6F5C]/20 focus:outline-none focus:border-[#8B6F5C]"
-                />
-              </div>
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Email"
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#8B6F5C]/20 focus:outline-none focus:border-[#8B6F5C]"
-                />
-              </div>
-              <div>
-                <textarea 
-                  placeholder="Mensaje"
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-[#8B6F5C]/20 focus:outline-none focus:border-[#8B6F5C]"
-                ></textarea>
-              </div>
               <button className="w-full bg-[#DD969C] text-white px-8 py-3 rounded-full hover:bg-[#A68977] transition">
-                Enviar mensaje
+                <a href="https://api.whatsapp.com/send?phone=527471010389&text=Hola,%20quiero%20reservar%20una%20clase…
+                  ">Enviar mensaje</a>
               </button>
-            </form>
+            
           </div>
         </div>
       </section>
@@ -440,9 +440,12 @@ function Home() {
           <div className="flex justify-between items-center">
             <p className="text-[#8B6F5C]">&copy; 2025 Pilates Reformer. Todos los derechos reservados.</p>
             <div className="flex gap-4">
-              <a href="#" className="text-[#8B6F5C] hover:text-[#A68977]">
+              <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="text-[#8B6F5C] hover:text-[#A68977]">
                 <Instagram className="w-6 h-6" />
               </a>
+              <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="text-[#8B6F5C] hover:text-[#A68977]">
+                  <Facebook className="w-6 h-6" />
+                </a>
             </div>
           </div>
         </div>

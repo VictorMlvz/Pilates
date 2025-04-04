@@ -16,7 +16,7 @@ function App() {
         <nav className="fixed w-full bg-white/85 backdrop-blur-sm z-50">
           <div className="container mx-auto px-6 py-3 flex justify-between items-center">
             <Link to="/" className="text-xl font-serif text-[#EA899A]">
-              Pilates Reformer
+              <img src="/src/Logo.png" alt="Logo"  className="h-20"/>
             </Link>
 
             {/* Menú de escritorio */}

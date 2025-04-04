@@ -33,14 +33,8 @@ function About() {
 
             <div>
               <h1 className="text-5xl font-serif text-[#DD969C] mb-6">Sobre Nosotras...</h1>
-              <p className="text-lg text-[#DD969C] mb-6">
-                Somos un estudio boutique exclusivo para mujeres, dedicado a transformar vidas a través del Pilates. Nuestro espacio ha sido diseñado pensando en tu comodidad y bienestar.
-              </p>
-              <p className="text-lg text-[#DD969C] mb-6">
-                Con años de experiencia, nuestro equipo de instructoras certificadas está comprometido con tu progreso y desarrollo personal.
-              </p>
               <p className="text-lg text-[#DD969C]">
-                En Pilates Reformer creemos en la disciplina que fortalece tus músculos, ayudándote a tonificar tu cuerpo, mejorar la coordinación, fuerza y equilibrio. Además de promover el bienestar en su totalidad!
+              Pilates Reformer, disciplina que fortalece tus músculos, ayudándote a tonificar tu cuerpo, mejorar la coordinación, fuerza y equilibrio. Además de promover el bienestar en su totalidad
               </p>
             </div>
 
@@ -56,46 +50,18 @@ function About() {
         </div>
       </section>
 
-      {/* Nuestro Equipo */}
-      <section className="bg-[#FDF6F6] py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-serif text-[#DD969C] text-center mb-16">Conoce A Nuestro Equipo!</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <img 
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                alt="Instructor"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-serif text-[#DD969C] mb-2">María García</h3>
-              <p className="text-[#DD969C]">Fundadora & Instructora Principal</p>
-            </div>
-            <div className="text-center">
-              <img 
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                alt="Instructor"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-serif text-[#DD969C] mb-2">Ana Martínez</h3>
-              <p className="text-[#DD969C]">Instructora Senior</p>
-            </div>
-            <div className="text-center">
-              <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                alt="Instructor"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-serif text-[#DD969C] mb-2">Laura Sánchez</h3>
-              <p className="text-[#DD969C]">Instructora de Reformer</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="bg-white py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-serif text-[#DD969C] text-center mb-16">Preguntas Frecuentes</h2>
+          <div className='hidden md:inline flex justify-center'>
+  <img
+    src="/src/2b.jpeg"
+    alt="Estudio de pilates"
+    className="rounded-lg shadow-lg h-[10rem]"
+  />
+  <br></br>
+</div>
           <div className="max-w-2xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="border border-[#8B6F5C]/20 rounded-lg">
@@ -125,31 +91,28 @@ function About() {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <MapPin className="w-6 h-6 text-[#DD969C]" />
-                <p className="text-[#DD969C]">Avenida Miguel Aleman 75, colonia Centro</p>
+                <p className="text-[#DD969C]">Av Miguel Alemán 75, Centro, 39000 Chilpancingo de los Bravo, Gro.</p>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-[#DD969C]" />
-                <p className="text-[#DD969C]">+55 123-456-7890</p>
+                <p className="text-[#DD969C]">+74 7101 0389</p>
               </div>
               <div className="flex items-center gap-4">
                 <Mail className="w-6 h-6 text-[#DD969C]" />
-                <p className="text-[#DD969C]">info@pilatesreformer.com</p>
+                <p className="text-[#DD969C]">info@bionaturapilatesreformer.com</p>
               </div>
               <div className="flex gap-4 pt-4 pb-1">
-                <a href="#" className="text-[#DD969C] hover:text-[#A68977]">
+                <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="text-[#DD969C] hover:text-[#A68977]">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-[#DD969C] hover:text-[#A68977]">
+                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="text-[#DD969C] hover:text-[#A68977]">
                   <Facebook className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-[#DD969C] hover:text-[#A68977]">
-                  <Twitter className="w-6 h-6" />
                 </a>
               </div>
             </div>
             <div className="h-[400px] rounded-lg overflow-hidden mt-6 md:mt-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5231663543486!2d-3.7037167846361647!3d40.41694977936441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2s!4v1647096857534!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7608.314381721277!2d-99.4987773!3d17.5477012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbedd73be23ff5%3A0x3f2979c0bf9eaadf!2sBionatura!5e0!3m2!1sen!2smx!4v1743742140869!5m2!1sen!2smx"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

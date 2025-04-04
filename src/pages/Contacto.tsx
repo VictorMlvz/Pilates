@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Mail, Phone, MessageCircle } from 'lucide-react';
+import { Instagram, MapPin, Mail, Phone, MessageCircle,Facebook } from 'lucide-react';
 
 function Contacto() {
 
@@ -22,8 +22,8 @@ function Contacto() {
                 </div>
                 <div>
                   <h4 className="font-serif text-[#D4A5A5] mb-1">Ubicación</h4>
-                  <p className="text-[#E3B7B7]">Av. Principal 123, Ciudad</p>
-                  <p className="text-[#E3B7B7]">CP 12345</p>
+                  <p className="text-[#E3B7B7]">Av Miguel Alemán 75, Centro, Chilpancingo de los Bravo, Gro.</p>
+                  <p className="text-[#E3B7B7]">CP 39000</p>
                 </div>
               </div>
 
@@ -43,7 +43,7 @@ function Contacto() {
                 </div>
                 <div>
                   <h4 className="font-serif text-[#D4A5A5] mb-1">Email</h4>
-                  <p className="text-[#E3B7B7]">info@pilatesreformer.com</p>
+                  <p className="text-[#E3B7B7]">info@bionaturapilatesreformer.com</p>
                 </div>
               </div>
             </div>
@@ -69,8 +69,11 @@ function Contacto() {
             <div className="mt-8 pt-8 border-t border-gray-100">
               <h4 className="font-serif text-[#D4A5A5] mb-4">Síguenos en</h4>
               <div className="flex space-x-4">
-                <a href="#" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
+                <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
                   <Instagram className="w-6 h-6" />
+                </a>
+                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
+                  <Facebook className="w-6 h-6" />
                 </a>
               </div>
             </div>
@@ -152,7 +155,7 @@ function Contacto() {
             <h3 className="text-2xl font-serif text-[#D4A5A5] mb-6">Nuestra Ubicación</h3>
             <div className="aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1620000000000!5m2!1ses!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7608.314381721277!2d-99.4987773!3d17.5477012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbedd73be23ff5%3A0x3f2979c0bf9eaadf!2sBionatura!5e0!3m2!1sen!2smx!4v1743742140869!5m2!1sen!2smx" 
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
