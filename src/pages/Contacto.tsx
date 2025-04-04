@@ -39,10 +39,27 @@ function Contacto() {
 
               <div className="flex items-start space-x-4">
                 <div className="bg-[#FDF6F6] p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-[#D4A5A5]" />
+                  <Mail className="w-6 h-6 text-[#D4A5A5]" /> 
+                </div>
+                <div >
+                <h4 className="font-serif text-[#D4A5A5] mb-1">Numero de tarjeta: </h4>
+                <p className="text-[#E3B7B7]">4152 3144 3003 1735</p>
+                <p className="text-[#E3B7B7]"> (La clase se apertura a partir de 3 personas.)</p>
                 </div>
               </div>
             </div>
+
+            <br></br>
+           
+            <div className="bg-[#DF428E] p-6 rounded-lg">
+              <h2 className="text-2xl font-serif text-[#FFFFFF] mb-4">Precios: </h2>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">1 clase $150</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">3 clases $400 </h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">6 clases $800</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">10 clases $1,300</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">30 clases $3,600</h3>
+          
+          </div>
 
             <div className="mt-8 pt-8 border-t border-gray-100">
               <h4 className="font-serif text-[#D4A5A5] mb-4">Horario de Atención</h4>
@@ -68,7 +85,7 @@ function Contacto() {
                 <a href="https://www.instagram.com/bionaturapilates?igsh=MWd3cG55d2Flcndndg==" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="text-[#DD969C] hover:text-[#A68977]">
+                <a href="https://www.facebook.com/share/18wK96CDNg/?mibextid=wwXIfr" className="bg-[#FDF6F6] p-3 rounded-lg text-[#D4A5A5] hover:bg-[#D4A5A5] hover:text-white transition-colors">
                   <Facebook className="w-6 h-6" />
                 </a>
               </div>
