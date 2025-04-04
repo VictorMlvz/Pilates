@@ -15,7 +15,7 @@ function About() {
     },
     {
       question: "¿Cuántas personas hay por clase?",
-      answer: "Nuestras clases son reducidas, con un máximo de 6 personas para garantizar atención personalizada."
+      answer: "Nuestras clases son reducidas, con un máximo de 8 personas para garantizar atención personalizada."
     },
     {
       question: "¿Cómo puedo reservar una clase?",
