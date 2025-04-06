@@ -1,4 +1,4 @@
-import { Dumbbell, Users, Calendar, Instagram, Clock, MapPin,Facebook } from 'lucide-react';
+import { Dumbbell, Users, Calendar, Instagram,Mail, Clock, MapPin,Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { addMonths, format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth } from 'date-fns';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -306,6 +306,16 @@ function Home() {
                         </button>
                       </form>
                     </div>
+                    <div className="flex items-start space-x-4">
+                                    <div className="bg-[#FDF6F6] p-3 rounded-lg">
+                                      <Mail className="w-6 h-6 text-[#D4A5A5]" /> 
+                                    </div>
+                                    <div >
+                                    <h4 className="font-serif text-[#D4A5A5] mb-1">Numero de tarjeta: </h4>
+                                    <p className="text-[#E3B7B7]">4152 3144 3003 1735</p>
+                                    <p className="text-[#E3B7B7]"> (La clase se apertura a partir de 3 personas.)</p>
+                                    </div>
+                                  </div>
                   </div>
                 </div>
 

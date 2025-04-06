@@ -65,7 +65,7 @@ function App() {
                   onClick={() => setIsMenuOpen(false)} 
                   className="hover:text-[#A68977]"
                 >
-                  Contacto
+                  Agenda
                 </Link>
               </div>
             </div>

@@ -7,7 +7,7 @@ function Contacto() {
 
       <div className="container mx-auto max-w-6xl">
 
-        <h2 className="text-3xl md:text-5xl font-serif text-[#D4A5A5] text-center mb-8 md:mb-12">Contacto</h2>
+        <h2 className="text-3xl md:text-5xl font-serif text-[#D4A5A5] text-center mb-8 md:mb-12">Agenda</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
 
@@ -145,7 +145,6 @@ function Contacto() {
               </div>
 
               <button
-                type="submit"
                 className="w-full bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition">
                 <a href="https://api.whatsapp.com/send?phone=527471010389&text=Hola,%20quiero%20reservar%20una%20clase… ">
                 Enviar mensaje</a>
