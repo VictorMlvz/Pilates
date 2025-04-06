@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contacto from './pages/Contacto';
+import logo from './Logo.png';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,14 +17,14 @@ function App() {
         <nav className="fixed w-full bg-white/85 backdrop-blur-sm z-50">
           <div className="container mx-auto px-6 py-3 flex justify-between items-center">
             <Link to="/" className="text-xl font-serif text-[#EA899A]">
-              <img src="/src/Logo.png" alt="Logo"  className="h-20"/>
+              <img src={logo} alt="Logo"  className="h-20"/>
             </Link>
 
             {/* Menú de escritorio */}
             <div className="hidden md:flex gap-8 text-[#EA899A]">
               <Link to="/" className="hover:text-[#A68977]">Inicio</Link>
               <Link to="/sobre-nosotras" className="hover:text-[#A68977]">Nosotras</Link>
-              <Link to="/contacto" className="hover:text-[#A68977]">Contacto</Link>
+              <Link to="/contacto" className="hover:text-[#A68977]">Agenda</Link>
             </div>
 
             {/* Botón para menú móvil */}

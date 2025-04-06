@@ -7,10 +7,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import a from '../1.jpeg';
+import b from '../2.jpeg';
+import c from '../3.jpeg';
+
+
 const images = [
-  "/src/2b.jpeg",
-  "/src/1a.jpeg",
-  "/src/3c.jpeg",
+  a,
+  b,
+  c,
 ];
 
 const settings = {
@@ -244,6 +249,18 @@ function Home() {
                         </button>
                       ))}
                     </div>
+                    <div className="bg-[#DF428E] p-6 rounded-lg">
+              <h2 className="text-2xl font-serif text-[#FFFFFF] mb-4">Precios: </h2>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">1 clase $150</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">3 clases $400 </h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">6 clases $800</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">10 clases $1,300</h3>
+              <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">30 clases $3,600</h3>
+              
+           </div>
+           <h1 className="text-4sm font-serif text-[#EA899A] text-center mb-16">La clase se apertura a partir de tres personas </h1>
+            <h3 className="text-4sm font-serif text-[#EA899A] text-center mb-16"> Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso)</h3>
+          
                   </div>
 
                   {/* Right Column - Time Selection & Form */}
@@ -373,7 +390,7 @@ function Home() {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="rounded-lg shadow-lg max-h-[400px] object-contain" // Ajusta max-h según necesites
+              className="mx-auto rounded-lg shadow-lg max-h-[400px] object-contain" // Ajusta max-h según necesites
             />
           </div>
         ))}
@@ -417,9 +434,9 @@ function Home() {
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">6 clases - $800</h3>
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">10 clases - $1,300</h3>
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">30 clases - $3,600</h3>
-          </div>
-          <h1 className="text-4sm font-serif text-[#EA899A] text-center mb-16">La clase se apertura a partir de tres personas </h1>
-          <h3 className="text-4sm font-serif text-[#EA899A] text-center mb-16"> Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso)</h3>
+            </div>
+            <h1 className="text-4sm font-serif text-[#EA899A] text-center mb-16">La clase se apertura a partir de tres personas </h1>
+            <h3 className="text-4sm font-serif text-[#EA899A] text-center mb-16"> Nota: Cancelación con 2 dias antes (NO HAY ningún reembolso)</h3>
           </div>
         </div>
       </section>

@@ -58,8 +58,7 @@ function Contacto() {
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">6 clases $800</h3>
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">10 clases $1,300</h3>
               <h3 className="text-xl font-serif text-[#FFFFFF] mb-4">30 clases $3,600</h3>
-          
-          </div>
+           </div>
 
             <div className="mt-8 pt-8 border-t border-gray-100">
               <h4 className="font-serif text-[#D4A5A5] mb-4">Horario de Atención</h4>
@@ -147,9 +146,9 @@ function Contacto() {
 
               <button
                 type="submit"
-                className="w-full bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition"
-              >
-                Enviar mensaje
+                className="w-full bg-[#D4A5A5] text-white px-8 py-3 rounded-full hover:bg-[#E3B7B7] transition">
+                <a href="https://api.whatsapp.com/send?phone=527471010389&text=Hola,%20quiero%20reservar%20una%20clase… ">
+                Enviar mensaje</a>
               </button>
             </form>
 

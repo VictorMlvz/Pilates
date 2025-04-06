@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Instagram, Facebook, MapPin, Mail, Phone, ChevronDown, Twitter } from 'lucide-react';
+import a from "../2.jpeg"
 
 function About() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -56,9 +57,9 @@ function About() {
           <h2 className="text-4xl font-serif text-[#DD969C] text-center mb-16">Preguntas Frecuentes</h2>
           <div className='hidden md:inline flex justify-center'>
   <img
-    src="/src/2b.jpeg"
+    src={a}
     alt="Estudio de pilates"
-    className="rounded-lg shadow-lg h-[10rem]"
+    className="mx-auto rounded-lg shadow-lg h-[12rem]"
   />
   <br></br>
 </div>
